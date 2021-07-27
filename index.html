@@ -1,49 +1,29 @@
 <html>
-
 <head>
-  <center>
-  <h1>Math quiz-2</h1>
+	<title>Guess The Word</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="game.css">
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="game_login.js"></script>
 </head>
-
 <body>
-<h3 id="player1_name"></h3>
-  <span id="player1_score">
-    </span>
-    <h3 id="player2_name"></h3>
-  <span id="player2_score">
-    </span>
-  <div class="container">
-    <center>
-      <h2 style="color: red;">Question</h2>
-<h3 id="player_question"></h3>
-      <h3 id-"player_answer"></h3>
-      <div id="output" class="col-lg-6"></div>
-      <br>
-      <br>
-
-      <label>Number: <b style="color: red">1</b></label>
-
-      <br>
-<input type="text" id="input1" class="form-control">
-      <br>
-      
-      <label>Number: <b style="color: red">2</b></label>
-
-      <br>
-<input type="text" id="input2" class="form-control">
-      <br>
-      <button class="btn btn-success" onclick="send()">Send</button>
-    </center>
+<center>
+  <h1>Math</h1>
+  <div class="col-lg-6 col-sm-12 col-xs-12 login_div1"><h2>Player 1 Login for the game</h2>
+    <lable>Username:</lable>
+    <input id="player1_name" type="text" class="form-control" place-holder="player 1 name">
   </div>
-
-  <script src="main.js"></script>
-</body>
+   <div class="col-lg-6 col-sm-12 col-xs-12 login_div1"><h2>Player 2 Login for the game</h2>
+    <lable>Username:</lable>
+    <input id="player2_name" type="text" class="form-control" place-holder="player 2 name">
+  </div>
+  <br>
+  <button class="btn btn-success" id="btn" onclick="uptade_name()">Login</button>
 </center>
+</body>
 </html>
